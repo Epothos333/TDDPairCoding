@@ -1,6 +1,6 @@
 function fizzBuzzWoof(n){
-	var num = n.toString();
-	var ans= "";
+	num = n.toString();
+	var ans="";
 	if (containOrDivisible(3)) {
 		ans += "Fizz";
 	};
@@ -19,4 +19,9 @@ function fizzBuzzWoof(n){
 function containOrDivisible(testNumber) {
 	return num.indexOf(testNumber) !==-1 || n % testNumber ===0;
 	};
+};
+
+
+for (var i = 1; i<= 100; i++) {
+	console.log(fizzBuzzWoof(i));
 };
